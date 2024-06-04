@@ -1,0 +1,27 @@
+version: v1
+name: buf.build/slandymani/evm-module
+deps:
+  - buf.build/cosmos/cosmos-sdk:v0.47.0
+  - buf.build/cosmos/cosmos-proto
+  - buf.build/cosmos/gogo-proto
+  - buf.build/cosmos/ibc:6c29d2ebf17002929c986fb45e83c2fecc76e6d3
+  - buf.build/cosmos/ics23
+  - buf.build/googleapis/googleapis
+lint:
+  use:
+    - DEFAULT
+    - COMMENTS
+    - FILE_LOWER_SNAKE_CASE
+  except:
+    - UNARY_RPC
+    - COMMENT_FIELD
+    - SERVICE_SUFFIX
+    - PACKAGE_VERSION_SUFFIX
+    - RPC_REQUEST_STANDARD_NAME
+    - RPC_REQUEST_RESPONSE_UNIQUE
+    - RPC_RESPONSE_STANDARD_NAME
+    - RPC_REQUEST_RESPONSE_UNIQUE
+    - COMMENT_MESSAGE
+breaking:
+  use:
+    - FILE

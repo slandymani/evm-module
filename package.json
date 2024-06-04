@@ -1,0 +1,14 @@
+{
+  "name": "evmm",
+  "version": "0.1.1",
+  "main": "index.js",
+  "repository": "https://github.com/slandymani/evm-module.git",
+  "author": "Evmm Network",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "vuepress": "^1.9.7"
+  },
+  "devDependencies": {
+    "swagger-combine": "^1.4.0"
+  }
+}
