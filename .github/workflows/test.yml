@@ -32,7 +32,7 @@ jobs:
           key: ${{ runner.os }}-go-tparse-binary
 
   test-unit:
-    runs-on: ubuntu-cpu16-ram64
+    runs-on: ubuntu-latest
     steps:
       - name: Set up go
         uses: actions/setup-go@v5
