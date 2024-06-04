@@ -48,7 +48,7 @@ func (suite *KeeperTestSuite) SetupApp(checkTx bool) {
 	suite.consAddress = sdk.ConsAddress(priv.PubKey().Address())
 
 	header := testutil.NewHeader(
-		1, time.Now().UTC(), "evmm_1", suite.consAddress, nil, nil,
+		1, time.Now().UTC(), "evmm_3-3", suite.consAddress, nil, nil,
 	)
 
 	suite.ctx = suite.app.BaseApp.NewContext(checkTx, header)

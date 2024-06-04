@@ -19,8 +19,8 @@ import (
 )
 
 const (
-	MainNetChainID   = "evm_1"
-	TestEdge2ChainID = "evm_3"
+	MainNetChainID   = "evmm_1"
+	TestEdge2ChainID = "evmm_3"
 	// BaseDenom defines the Evmm Network mainnet denomination
 	BaseDenom = "aISLM"
 )

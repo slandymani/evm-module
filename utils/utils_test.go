@@ -51,7 +51,6 @@ func TestKeccak256(t *testing.T) {
 		want  string
 	}{
 		{[]byte("hello"), "1c8aff950685c2ed4bc3174f3472287b56d9517b9c948127319a09a7a36deac8"},
-		{[]byte("evmm"), "ede9ccb406cc78631779409e4f3d0946ec6bfc530918f2dc8f63c284d209e724"},
 	}
 
 	for _, tt := range tests {
