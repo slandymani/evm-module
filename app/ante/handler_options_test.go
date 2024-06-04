@@ -43,20 +43,6 @@ func (suite *AnteTestSuite) TestValidateHandlerOptions() {
 				AccountKeeper:      suite.app.AccountKeeper,
 				BankKeeper:         suite.app.BankKeeper,
 				DistributionKeeper: nil,
-
-				IBCKeeper: nil,
-			},
-			false,
-		},
-		{
-			"fail - empty IBC keeper",
-			ante.HandlerOptions{
-				Cdc:                suite.app.AppCodec(),
-				AccountKeeper:      suite.app.AccountKeeper,
-				BankKeeper:         suite.app.BankKeeper,
-				DistributionKeeper: suite.app.DistrKeeper,
-
-				IBCKeeper: nil,
 			},
 			false,
 		},
@@ -67,7 +53,7 @@ func (suite *AnteTestSuite) TestValidateHandlerOptions() {
 				AccountKeeper:      suite.app.AccountKeeper,
 				BankKeeper:         suite.app.BankKeeper,
 				DistributionKeeper: suite.app.DistrKeeper,
-				StakingKeeper: nil,
+				StakingKeeper:      nil,
 			},
 			false,
 		},

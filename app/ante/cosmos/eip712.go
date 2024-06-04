@@ -17,10 +17,10 @@ import (
 	"github.com/ethereum/go-ethereum/crypto/secp256k1"
 	"github.com/ethereum/go-ethereum/signer/core/apitypes"
 
+	"github.com/slandymani/evm-module/crypto/ethsecp256k1"
 	"github.com/slandymani/evm-module/ethereum/eip712"
 	"github.com/slandymani/evm-module/types"
 	evmtypes "github.com/slandymani/evm-module/x/evm/types"
-	"github.com/slandymani/evm-module/crypto/ethsecp256k1"
 )
 
 var protoCodec codec.ProtoCodecMarshaler

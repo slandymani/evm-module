@@ -12,8 +12,8 @@ import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/slandymani/evm-module/x/evm/types"
 	utiltx "github.com/slandymani/evm-module/testutil/tx"
+	"github.com/slandymani/evm-module/x/evm/types"
 )
 
 type TxDataTestSuite struct {
